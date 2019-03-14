@@ -1,0 +1,10 @@
+<h2>testingmyform2</h2>
+
+CATEGORIES = %w(Lemon, Lime, Limones, Limon Amarillo, Limon Amargo)
+
+<%= simple_form_for [@cocktail, @doses] do |f| %>
+
+  <%= f.association :ingredient %>
+  <%= f.input :description %>
+  <%= f.submit "add Doses", class: "btn btn-primary" %>
+<% end %>
